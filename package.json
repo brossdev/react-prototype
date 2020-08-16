@@ -11,6 +11,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "react": "15.x || 16.x || 16.4.0-alpha.0911da3",
+    "react-async": "^10.0.1",
     "react-dom": "15.x || 16.x || 16.4.0-alpha.0911da3",
     "react-router": "^5.2.0",
     "tailwindcss": "^1.6.2"
