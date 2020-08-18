@@ -1,4 +1,4 @@
-import React, { memo, lazy, useEffect, Suspense } from "react";
+import React, { lazy, useEffect, Suspense } from "react";
 
 const loadAuthenticatedApp = () => import("./authenticatedApp");
 const AuthenticatedApp = lazy(loadAuthenticatedApp);
