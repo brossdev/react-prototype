@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import LoginForm from "../components/LoginForm";
 
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../context/AuthContext";
 
 const Home = () => {
   const { login } = useAuth();
@@ -11,13 +11,13 @@ const Home = () => {
     await login({ email, password });
   };
 
-  <div className="w-full max-w-xs">
+  return (<div className="w-full max-w-xs">
     <LoginForm onSubmit={submitLogin} />
     <Link to="/register">Register</Link>
     <p className="text-center text-gray-500 text-xs">
       &copy;2020 BR Corp. All rights reserved.
     </p>
-  </div>;
+  </div>);
 };
 
 export default Home;
