@@ -2,6 +2,7 @@ import { Router } from "@reach/router";
 import React from "react";
 
 import Home from "./screens/Home";
+import Register from "./screens/Register"
 
 const UnauthenticatedApp = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
     <Router>
       <RedirectHome default />
       <Home path="/" />
+      <Register path="/register" />
     </Router>
   );
 };

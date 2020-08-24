@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import RegistrationForm from "../components/RegistrationForm";
 import VerificationForm from "../components/VerificationForm";
-import { Container, Row, Col } from "reactstrap";
 
 const Register = () => {
   const [step, setStep] = useState(0);
