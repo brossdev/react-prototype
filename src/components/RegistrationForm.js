@@ -11,23 +11,23 @@ const RegistrationForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
       <h2>Register</h2>
       <div>
-        <div>
+        <div className="mb-4">
           <label htmlFor="email">
             <span>Email</span>
-            <input id="email" type="email" />
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" />
           </label>
         </div>
-        <div>
+        <div className="mb-6">
           <label htmlFor="password">
             <span>Password</span>
-            <input id="password" type="password" />
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" />
           </label>
         </div>
-        <div>
-          <button type="submit">Sign Up</button>
+        <div className="flex items-center justify-between">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Sign Up</button>
         </div>
       </div>
     </form>
