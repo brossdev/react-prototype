@@ -12,7 +12,6 @@ const UnauthenticatedApp = () => {
 };
 
 const RedirectHome = () => {
-  // trigger hard redirect when unauthenticated user goes to unknown route
   window.location.href = `${window.location.origin}/`;
 };
 
