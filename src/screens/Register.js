@@ -11,8 +11,8 @@ const Register = () => {
 
   const { register, confirmRegistration } = useAuth();
 
-  const submitRegistration = ({ email, password }) => {
-    register({ email, password });
+  const submitRegistration = ({ email, birthdate, password }) => {
+    register({ email, birthdate, password });
     setEmail(email);
     setPassword(password);
     setStep(1);
@@ -36,9 +36,7 @@ const Register = () => {
   return (
     <div>
       <div>
-        <div >
-          {renderSwitch()}
-        </div>
+        <div>{renderSwitch()}</div>
       </div>
     </div>
   );
