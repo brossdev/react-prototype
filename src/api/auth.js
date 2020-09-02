@@ -5,11 +5,14 @@ const getUser = async () => {
   return user ?? null;
 };
 
-const register = async ({ email, password }) => {
+const register = async ({ email, birthdate, password }) => {
   try {
     await Auth.signUp({
       username: email,
       password,
+      attributes: {
+        birthdate,
+      },
     });
   } catch (error) {
     console.log("sign up failed");

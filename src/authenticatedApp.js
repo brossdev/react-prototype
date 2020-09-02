@@ -3,7 +3,7 @@ import React from "react";
 
 import Header from "./components/Header";
 
-import Dashboard from "./screens/Dashboard";
+import Hub from "./screens/Hub";
 
 const AuthenticatedApp = () => {
   return (
@@ -17,14 +17,14 @@ const AuthenticatedApp = () => {
 };
 
 const RedirectHome = () => {
-  return <Redirect noThrow to="/dashboard" />;
+  return <Redirect noThrow to="/hub" />;
 };
 
 const Routes = () => {
   return (
     <Router>
       <RedirectHome default path="/" />
-      <Dashboard path="/dashboard" />
+      <Hub path="/hub" />
     </Router>
   );
 };
