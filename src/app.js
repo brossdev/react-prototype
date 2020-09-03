@@ -11,11 +11,7 @@ const App = () => {
     loadAuthenticatedApp();
   }, []);
 
-  return (
-    <Suspense fallback={<div>Loading ...</div>}>
-      <main>{user ? <AuthenticatedApp /> : <UnauthenticatedApp />}</main>
-    </Suspense>
-  );
+  return <Suspense fallback={<div>Loadiung ...</div>}>{user ? <AuthenticatedApp /> : <UnauthenticatedApp />}</Suspense>;
 };
 
 export default App;
