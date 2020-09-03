@@ -5,5 +5,6 @@ Create and populate a env.local file with the environment variables used in the 
 To run the project
 
 ```
+yarn
 yarn dev
 ```
