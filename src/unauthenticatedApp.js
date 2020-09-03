@@ -2,12 +2,14 @@ import { Router } from "@reach/router";
 import React from "react";
 
 import Home from "./screens/Home";
-import Register from "./screens/Register"
+import Register from "./screens/Register";
 
 const UnauthenticatedApp = () => {
   return (
     <div>
-      <Routes />
+      <main id="#main-content">
+        <Routes />
+      </main>
     </div>
   );
 };
