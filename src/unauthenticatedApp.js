@@ -1,13 +1,13 @@
-import { Router } from "@reach/router";
-import React from "react";
+import { Router } from '@reach/router';
+import React from 'react';
 
-import Home from "./screens/Home";
-import Register from "./screens/Register";
+import Home from './screens/Home';
+import Register from './screens/Register';
 
 const UnauthenticatedApp = () => {
   return (
     <div>
-      <main id="#main-content">
+      <main id='#main-content'>
         <Routes />
       </main>
     </div>
@@ -22,8 +22,8 @@ const Routes = () => {
   return (
     <Router>
       <RedirectHome default />
-      <Home path="/" />
-      <Register path="/register" />
+      <Home path='/' />
+      <Register path='/register' />
     </Router>
   );
 };

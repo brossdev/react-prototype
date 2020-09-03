@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./app";
-import Amplify from "@aws-amplify/core";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app';
+import Amplify from '@aws-amplify/core';
 
-import AppProviders from "./context";
+import AppProviders from './context';
 
-import "./index.css";
+import './index.css';
 
 Amplify.configure({
   Auth: {
@@ -20,5 +20,5 @@ ReactDOM.render(
   <AppProviders>
     <App />
   </AppProviders>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );

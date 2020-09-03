@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Link } from "@reach/router";
+import React, { useState } from 'react';
+import { Link } from '@reach/router';
 
-import { useAuth } from "../context/AuthContext";
-import RegistrationForm from "../components/RegistrationForm";
-import VerificationForm from "../components/VerificationForm";
+import { useAuth } from '../context/AuthContext';
+import RegistrationForm from '../components/RegistrationForm';
+import VerificationForm from '../components/VerificationForm';
 
 const Register = () => {
   const [step, setStep] = useState(0);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const { register, confirmRegistration } = useAuth();
 
@@ -38,7 +38,7 @@ const Register = () => {
     <div>
       <div>
         <div>{renderSwitch()}</div>
-        <Link to="/">Home</Link>
+        <Link to='/'>Home</Link>
       </div>
     </div>
   );

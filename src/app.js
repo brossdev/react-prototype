@@ -1,9 +1,9 @@
-import React, { lazy, useEffect, Suspense } from "react";
-import { useUser } from "./context/UserContext";
+import React, { lazy, useEffect, Suspense } from 'react';
+import { useUser } from './context/UserContext';
 
-const loadAuthenticatedApp = () => import("./authenticatedApp");
+const loadAuthenticatedApp = () => import('./authenticatedApp');
 const AuthenticatedApp = lazy(loadAuthenticatedApp);
-const UnauthenticatedApp = lazy(() => import("./unauthenticatedApp"));
+const UnauthenticatedApp = lazy(() => import('./unauthenticatedApp'));
 
 const App = () => {
   const user = useUser();

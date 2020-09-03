@@ -1,4 +1,4 @@
-import { getUser } from "../api/auth";
+import { getUser } from '../api/auth';
 
 const bootstrapAppData = async () => {
   const user = await getUser();

@@ -1,4 +1,4 @@
-import Auth from "@aws-amplify/auth";
+import Auth from '@aws-amplify/auth';
 
 const getUser = async () => {
   const user = await Auth.currentAuthenticatedUser();
@@ -15,7 +15,7 @@ const register = async ({ email, birthdate, password }) => {
       },
     });
   } catch (error) {
-    console.log("sign up failed");
+    console.log('sign up failed');
   }
 };
 
@@ -26,7 +26,7 @@ const confirmRegistration = async ({ email, password, verificationCode }) => {
     console.log({ verificationCode });
   } catch (error) {
     console.log(error);
-    throw new Error(" sign in confirm failed");
+    throw new Error(' sign in confirm failed');
   }
 };
 
@@ -36,7 +36,7 @@ const logout = async () => {
   try {
     await Auth.signOut();
   } catch (error) {
-    throw new Error(" sign out failed");
+    throw new Error(' sign out failed');
   }
 };
 
