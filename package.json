@@ -37,5 +37,10 @@
   },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
