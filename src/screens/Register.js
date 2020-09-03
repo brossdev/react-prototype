@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "@reach/router";
 
 import { useAuth } from "../context/AuthContext";
 import RegistrationForm from "../components/RegistrationForm";
@@ -37,6 +38,7 @@ const Register = () => {
     <div>
       <div>
         <div>{renderSwitch()}</div>
+        <Link to="/">Home</Link>
       </div>
     </div>
   );
