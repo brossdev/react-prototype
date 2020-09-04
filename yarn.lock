@@ -19,7 +19,7 @@
   dependencies:
     "@aws-amplify/core" "^3.5.0"
 
-"@aws-amplify/core@^3.5.0":
+"@aws-amplify/core@^3.4.0", "@aws-amplify/core@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@aws-amplify/core/-/core-3.5.0.tgz#e86d71fe1f17047a65fa323bb13437bf97b4f69c"
   integrity sha512-AcyfC7ekXvagyg3Za4DiJ5S7z2z6paOT2RojADlHXosAXag2XHCEX1DpzF6u/sLjwYqq0u7Ga+08ZHxlr9pc6A==

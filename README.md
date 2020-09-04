@@ -8,3 +8,5 @@ To run the project
 yarn
 yarn dev
 ```
+
+open http://localhost:1234 in your browser
